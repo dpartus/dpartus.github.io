@@ -1,5 +1,24 @@
-$color: blue;
+$background-color: #f2f1ef;
+$nav-color: #222222;
 
-h1 {
-    color: $color;
+body, html {
+    font-family: 'Lato', sans-serif;
+    background-color: $background-color;
+    width:100%;
+    height:100%;
 }
+
+
+/* Navigation   */    
+nav {
+    background-color: $nav-color;
+
+}
+
+
+
+/* Hero Section */
+
+
+
+

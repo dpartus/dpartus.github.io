@@ -1,4 +1,13 @@
-h1 {
-  color: blue; }
+body, html {
+  font-family: 'Lato', sans-serif;
+  background-color: #f2f1ef;
+  width: 100%;
+  height: 100%; }
+
+/* Navigation   */
+nav {
+  background-color: #222222; }
+
+/* Hero Section */
 
 /*# sourceMappingURL=main.css.map */
