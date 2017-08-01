@@ -1,24 +1,25 @@
 /* Font */
-
+$font: 'Lato', sans-serif;
 
 /* Font weight */
+$regular-weight: 400;
+$bold-weight: 700;
 
 
 
 
 
-
-
+/* Colors */
 $background-color: #f2f1ef;
 $nav-color: #222222;
-
-
+$hero-font-color: #f2f1ef;
+$hero-button-color: #51e3c2;
 
 
 
 
 body, html {
-    font-family: 'Lato', sans-serif;
+    font-family:$font;
     background-color: $background-color;
     width:100%;
     height:100%;
@@ -52,5 +53,23 @@ nav {
 
 .hero-text{
     position: absolute;
-    
+    color: $hero-font-color;
+    top: 50%;
+    left: 10%;
 }
+
+/*maybe nest??? */
+.hero-button{
+    border-radius: 35px;
+    padding: 6px 30px;
+    background-color: $hero-button-color;
+    /* make these 3 variables*/
+    border-color: black;
+    font-size: 16px;
+    font-weight: $bold-weight;
+
+
+}
+
+
+/* How it works */
