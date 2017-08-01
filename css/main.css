@@ -10,7 +10,8 @@ body, html {
 /* Navigation   */
 nav {
   background-color: #222222;
-  position: absolute;
+  position: relative;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%; }
@@ -21,7 +22,7 @@ nav {
 
 /* Hero Section */
 .hero-image {
-  position: absolute;
+  position: relative;
   top: 42px;
   left: 0;
   width: 100%; }
@@ -40,8 +41,23 @@ nav {
   /* make these 3 variables*/
   border-color: black;
   font-size: 16px;
-  font-weight: 700; }
+  font-weight: 700;
+  /*hover, disable, etc nested*/ }
 
 /* How it works */
+h1 {
+  text-align: center;
+  color: white; }
+
+.how-to-row {
+  position: absolute;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.how-to-container {
+  float: left;
+  width: 200px;
+  margin: 20px 50px; }
 
 /*# sourceMappingURL=main.css.map */

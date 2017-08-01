@@ -6,14 +6,16 @@ $regular-weight: 400;
 $bold-weight: 700;
 
 
-
-
-
 /* Colors */
 $background-color: #f2f1ef;
 $nav-color: #222222;
-$hero-font-color: #f2f1ef;
+$hero-text-color: #f2f1ef;
 $hero-button-color: #51e3c2;
+$hero-button-outline: #222222;
+$hero-button-text:#262628;
+$how-to-header: #262628;
+$how-to-block:#262628;
+$how-to-separator: #51e3c2;
 
 
 
@@ -29,7 +31,8 @@ body, html {
 /* Navigation   */    
 nav {
     background-color: $nav-color;
-    position: absolute;
+    position: relative;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -45,7 +48,7 @@ nav {
 /* Hero Section */
 
 .hero-image{
-    position: absolute;
+    position: relative;
     top: 42px;
     left: 0;
     width: 100%;
@@ -53,7 +56,7 @@ nav {
 
 .hero-text{
     position: absolute;
-    color: $hero-font-color;
+    color: $hero-text-color;
     top: 50%;
     left: 10%;
 }
@@ -68,8 +71,29 @@ nav {
     font-size: 16px;
     font-weight: $bold-weight;
 
+    /*hover, disable, etc nested*/
+
 
 }
 
 
 /* How it works */
+h1{
+    text-align: center;
+    color: white;
+
+}
+
+.how-to-row{
+    position: absolute;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.how-to-container{
+    float: left;
+    width: 200px;
+    margin: 20px 50px;
+}
+
