@@ -1,3 +1,5 @@
+/* Font */
+/* Font weight */
 body, html {
   font-family: 'Lato', sans-serif;
   background-color: #f2f1ef;
@@ -6,8 +8,24 @@ body, html {
 
 /* Navigation   */
 nav {
-  background-color: #222222; }
+  background-color: #222222;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  nav .logo {
+    height: 20px;
+    width: 150px;
+    padding: 10px 100px; }
 
 /* Hero Section */
+.hero-image {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%; }
+
+.hero-text {
+  position: absolute; }
 
 /*# sourceMappingURL=main.css.map */

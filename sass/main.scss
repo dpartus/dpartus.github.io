@@ -1,5 +1,21 @@
+/* Font */
+
+
+/* Font weight */
+
+
+
+
+
+
+
 $background-color: #f2f1ef;
 $nav-color: #222222;
+
+
+
+
+
 
 body, html {
     font-family: 'Lato', sans-serif;
@@ -12,13 +28,29 @@ body, html {
 /* Navigation   */    
 nav {
     background-color: $nav-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 
+    .logo {
+        height: 20px;
+        width: 150px;
+        padding: 10px 100px;
+
+    }
 }
-
-
 
 /* Hero Section */
 
+.hero-image{
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+}
 
-
-
+.hero-text{
+    position: absolute;
+    
+}
