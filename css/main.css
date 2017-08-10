@@ -36,7 +36,8 @@ nav {
   position: absolute;
   color: #f2f1ef;
   top: 50%;
-  left: 15%; }
+  left: 15%;
+  transition: all .2s linear; }
 
 .hero-small-header {
   font-size: 18px;
@@ -69,12 +70,13 @@ nav {
 h1 {
   text-align: center;
   color: #262628;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-bottom: 5px; }
 
 .how-to-row {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 100px; }
+  padding: 20px 10%; }
 
 .how-to-container {
   flex: 1;
@@ -91,10 +93,12 @@ h1 {
   margin: 0; }
 
 .how-heading {
-  font-size: 15px; }
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px; }
 
 .how-paragraph {
-  margin-top: -10px;
+  margin-top: 5px;
   font-size: 15px; }
 
 hr {
@@ -128,9 +132,15 @@ a {
   .hero-text {
     position: absolute;
     color: #f2f1ef;
-    top: 10%;
+    top: 15%;
     left: 15%; } }
 @media screen and (max-width: 760px) {
+  .hero-big-header {
+    font-size: 40px; }
+
+  .hero-paragraph {
+    width: 80%; }
+
   .how-to-container {
     flex-basis: 50%; } }
 @media screen and (max-width: 520px) {
