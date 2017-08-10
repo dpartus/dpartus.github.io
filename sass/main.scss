@@ -192,31 +192,46 @@ a {
         top: 15%;
         left: 15%;
         }
+    .hero-paragraph{
+        width: 70%;
+    }
 }
 
 @media screen and  (max-width:760px) {
+    .hero-text{
+        position: absolute;
+        color: $hero-text-color;
+        top: 10%;
+        left: 15%;
+        }
     .hero-big-header{
         font-size: 40px;
     }
     .hero-paragraph{
-        width: 80%;
+        width: 90%;
     }
     .how-to-container{
         flex-basis: 50%;
     }
 }
 
-
-
-@media screen and  (max-width:520px) {
+@media screen and  (max-width:620px) {
     .hero-text{
         position: absolute;
         color: $hero-text-color;
         top: 5%;
         left: 15%;
         }
+    .hero-big-header{
+        font-size: 30px;
+    }
+}
+
+@media screen and  (max-width:480px) {
+    .hero-button{
+        margin-top: 20px;
+    }
     .hero-paragraph{
         display: none;
     }
 }
-
