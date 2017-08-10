@@ -36,8 +36,7 @@ nav {
   position: absolute;
   color: #f2f1ef;
   top: 50%;
-  left: 15%;
-  width: 60%; }
+  left: 15%; }
 
 .hero-small-header {
   font-size: 18px;
@@ -62,8 +61,7 @@ nav {
   /* make these 3 variables*/
   border-color: #222222;
   font-size: 16px;
-  font-weight: 700;
-  /*hover, disable, etc nested*/ }
+  font-weight: 700; }
   .hero-button:hover {
     background-color: #f2f1ef; }
 
@@ -110,8 +108,39 @@ a {
   color: #222222;
   text-decoration: none; }
 
+/* Media Queries */
+@media screen and (max-width: 1250px) {
+  .hero-text {
+    position: absolute;
+    color: #f2f1ef;
+    top: 30%;
+    left: 15%; } }
+@media screen and (max-width: 1020px) {
+  .hero-text {
+    position: absolute;
+    color: #f2f1ef;
+    top: 15%;
+    left: 15%; } }
 @media screen and (max-width: 1050px) {
   .how-to-container {
-    flex-basis: 25%; } }
+    flex-basis: 40%; } }
+@media screen and (max-width: 1020px) {
+  .hero-text {
+    position: absolute;
+    color: #f2f1ef;
+    top: 10%;
+    left: 15%; } }
+@media screen and (max-width: 760px) {
+  .how-to-container {
+    flex-basis: 50%; } }
+@media screen and (max-width: 520px) {
+  .hero-text {
+    position: absolute;
+    color: #f2f1ef;
+    top: 5%;
+    left: 15%; }
+
+  .hero-paragraph {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
