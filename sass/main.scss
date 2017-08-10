@@ -5,6 +5,10 @@ $font: 'Lato', sans-serif;
 $regular-weight: 400;
 $bold-weight: 700;
 
+/* Font sizes */
+
+
+
 
 /* Colors */
 $background-color: #f2f1ef;
@@ -13,6 +17,7 @@ $hero-text-color: #f2f1ef;
 $hero-button-color: #51e3c2;
 $hero-button-outline: #222222;
 $hero-button-text:#262628;
+$hero-button-hover: #f2f1ef;
 $how-to-header: #262628;
 $how-to-block:#262628;
 $how-to-separator: #51e3c2;
@@ -38,13 +43,12 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-
     .logo {
         height: 20px;
         width: 150px;
-        padding: 15px 100px;
-        margin-top: 5px;
-
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 15%;
     }
 }
 
@@ -61,8 +65,28 @@ nav {
     position: absolute;
     color: $hero-text-color;
     top: 50%;
-    left: 10%;
+    left: 15%;
+    width: 60%;
 }
+
+.hero-small-header{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hero-big-header{
+    font-size: 50px;
+    font-weight: $regular-weight;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hero-paragraph{
+    font-size: 15px;
+    width: 55%;
+    margin-bottom: 20px;
+}
+
 
 /*maybe nest??? */
 .hero-button{
@@ -70,9 +94,12 @@ nav {
     padding: 8px 30px;
     background-color: $hero-button-color;
     /* make these 3 variables*/
-    border-color: black;
+    border-color:$hero-button-outline;
     font-size: 16px;
     font-weight: $bold-weight;
+    &:hover {
+        background-color:$hero-button-hover;
+    }
 
     /*hover, disable, etc nested*/
 
@@ -84,32 +111,60 @@ nav {
 h1{
     text-align: center;
     color: $how-to-header;
+    font-weight: $regular-weight;
 
 }
 
 .how-to-row{
-    position: absolute;
-    margin: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    
 }
 
+
 .how-to-container{
-    float: left;
-    width: 200px;
-    margin: 20px 50px;
+    flex: 1;
+    margin: 10px 20px;
     text-align: center;
+    &:hover{
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        transition: 0.2s ease-out;
+    }
+}
+
+.how-number{
+    font-weight:$regular-weight;
+    font-size: 50px;
+    margin: 0;
+}
+
+.how-heading{
+    font-size: 15px;
+}
+
+.how-paragraph{
+    margin-top: -10px;;
+    font-size: 15px;
 }
 
 hr {
     color:$how-to-separator;
     background-color: $how-to-separator;
     width: 60px;    
-    height: 1px;
-    border-top: 5px solid;
+    height: 5px;
+    border: 0;
 }
 
 a {
   color: #222222;
   text-decoration: none;
 }
+
+@media screen and  (max-width:1050px) {
+    .how-to-container{
+        flex-basis: 25%;
+    }
+}
+

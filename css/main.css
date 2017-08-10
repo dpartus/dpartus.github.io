@@ -1,5 +1,6 @@
 /* Font */
 /* Font weight */
+/* Font sizes */
 /* Colors */
 body, html {
   font-family: "Lato", sans-serif;
@@ -20,8 +21,9 @@ nav {
   nav .logo {
     height: 20px;
     width: 150px;
-    padding: 15px 100px;
-    margin-top: 5px; }
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15%; }
 
 /* Hero Section */
 .hero-image {
@@ -34,7 +36,23 @@ nav {
   position: absolute;
   color: #f2f1ef;
   top: 50%;
-  left: 10%; }
+  left: 15%;
+  width: 60%; }
+
+.hero-small-header {
+  font-size: 18px;
+  margin-bottom: 10px; }
+
+.hero-big-header {
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.hero-paragraph {
+  font-size: 15px;
+  width: 55%;
+  margin-bottom: 20px; }
 
 /*maybe nest??? */
 .hero-button {
@@ -42,37 +60,58 @@ nav {
   padding: 8px 30px;
   background-color: #51e3c2;
   /* make these 3 variables*/
-  border-color: black;
+  border-color: #222222;
   font-size: 16px;
   font-weight: 700;
   /*hover, disable, etc nested*/ }
+  .hero-button:hover {
+    background-color: #f2f1ef; }
 
 /* How it works */
 h1 {
   text-align: center;
-  color: #262628; }
+  color: #262628;
+  font-weight: 400; }
 
 .how-to-row {
-  position: absolute;
-  margin: auto;
-  padding-right: 15px;
-  padding-left: 15px; }
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 100px; }
 
 .how-to-container {
-  float: left;
-  width: 200px;
-  margin: 20px 50px;
+  flex: 1;
+  margin: 10px 20px;
   text-align: center; }
+  .how-to-container:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.2s ease-out; }
+
+.how-number {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0; }
+
+.how-heading {
+  font-size: 15px; }
+
+.how-paragraph {
+  margin-top: -10px;
+  font-size: 15px; }
 
 hr {
   color: #51e3c2;
   background-color: #51e3c2;
   width: 60px;
-  height: 1px;
-  border-top: 5px solid; }
+  height: 5px;
+  border: 0; }
 
 a {
   color: #222222;
   text-decoration: none; }
+
+@media screen and (max-width: 1050px) {
+  .how-to-container {
+    flex-basis: 25%; } }
 
 /*# sourceMappingURL=main.css.map */
