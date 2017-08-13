@@ -210,6 +210,9 @@ a {
 }
 
 @media screen and (max-width: 440px) {
+  .hero-small-header {
+    font-size: 15px;
+  }
   .hero-big-header {
     font-size: 20px;
   }
