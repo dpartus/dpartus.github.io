@@ -1,6 +1,5 @@
 /* Font */
 /* Font weight */
-/* Font sizes */
 /* Colors */
 body, html {
   font-family: "Lato", sans-serif;
@@ -54,12 +53,11 @@ nav {
   width: 55%;
   margin-bottom: 20px; }
 
-/*maybe nest??? */
+/* Hero Button */
 .hero-button {
   border-radius: 35px;
   padding: 8px 30px;
   background-color: #51e3c2;
-  /* make these 3 variables*/
   border-color: #222222;
   font-size: 16px;
   font-weight: 700; }
@@ -81,7 +79,8 @@ h1 {
 .how-to-container {
   flex: 1;
   margin: 10px 20px;
-  text-align: center; }
+  text-align: center;
+  transition: all .2s linear; }
   .how-to-container:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
@@ -167,5 +166,8 @@ a {
 
   .hero-paragraph {
     display: none; } }
+@media screen and (max-width: 440px) {
+  .hero-big-header {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
