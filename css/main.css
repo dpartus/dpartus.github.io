@@ -166,7 +166,7 @@ a {
 
   .hero-paragraph {
     display: none; } }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 400px) {
   .hero-small-header {
     font-size: 15px; }
 
