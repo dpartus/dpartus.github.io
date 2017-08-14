@@ -223,6 +223,12 @@ a {
 }
 
 @media screen and  (max-width:480px) {
+    .hero-text{
+        position: absolute;
+        color: $hero-text-color;
+        top: 7%;
+        left: 15%;
+        }
     .hero-button{
         margin-top: 20px;
     }
@@ -232,6 +238,12 @@ a {
 }
 
 @media screen and (max-width:400px){
+    .hero-text{
+        position: absolute;
+        color: $hero-text-color;
+        top: 5%;
+        left: 15%;
+        }
     .hero-small-header{
         font-size: 15px;
     }
