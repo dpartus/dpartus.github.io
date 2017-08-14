@@ -237,11 +237,11 @@ a {
     }
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:420px){
     .hero-text{
         position: absolute;
         color: $hero-text-color;
-        top: 5%;
+        top: 8%;
         left: 15%;
         }
     .hero-small-header{
